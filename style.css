@@ -1,0 +1,118 @@
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /* background:linear-gradient(to right,purple,blue,yellow,pink,red); */
+    background:linear-gradient(rgb(142, 142, 247));
+
+    display: grid;
+    /* background: rgb(146, 143, 144); */
+    place-items: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+
+}
+.container{
+    width: 90%;
+    max-width: 420px;
+    background-color: rgb(242, 243, 244);
+    /* background:linear-gradient(to right,purple,pink,red); */
+
+    padding:2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(82, 81, 80);
+    display: grid;
+    gap: 1rem;   
+}
+
+.calculator{
+    display: grid;
+    gap: 1rem;
+}
+.calculator div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.calculator label{
+    flex: 0 1 120px;
+    font-weight: 900px;
+}
+.text{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.calculator input{
+    flex: 1;
+    border: 1px solid rgb(182, 177, 177);
+    padding:10px ;
+    outline-color: gray;
+    font-size: 1.25rem;
+    text-align: center;
+    cursor: pointer;
+}
+.calculator button{
+    cursor: pointer;
+    width: 50%;
+    border-radius:5px ;
+    border: none;
+    padding: 10px;
+    color: rgb(246, 241, 241);
+    box-shadow: 2px 2px 2px gray;
+    background: rgb(159, 62, 79);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#submit{
+    color: white;
+    background: rgb(3, 187, 3) ;
+}
+.calculator button:hover{
+    color: white;
+    background: rgb(249, 61, 73);
+    transition: 0.5s;
+}
+.calculator button#submit:hover{
+    color: white;
+    background: rgb(6, 99, 45);
+    transition: .5s;
+}
+.output{
+    font-weight: 800;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+    /* border-top: 3px solid rgb(195, 210, 27); */
+    
+}
+.output #bmi{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.output #desc Strong{
+    text-transform: uppercase;
+}
+.bmi-scale{
+    color: rgb(113, 114, 115);
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+/* Add these styles for the horizontal line */
+.hr {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, red, green, yellow, red);
+    margin: 0;
+    border: none;
+}

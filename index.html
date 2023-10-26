@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bmi calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form class="calculator">
+            <div>
+                <label for="weight" class="text">Weight(kg)</label>
+                <input type="number" min="0" id="weight" step="0.1" value="0">
+            </div>
+            <div>
+                <label for="height" class="text">Height (fit)</label>
+                <input type="number" min="0"  id="height" step=".5"  value="0">
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+        <hr>
+        <section class="output">
+            <h5>Your BMI is :</h5>
+            <p id="bmi">0</p>
+            <p id="desc">N/A</p>
+        </section>
+        
+        <hr class="hr">
+        <section class="bmi-scale">
+            <div id="b-1">
+                <h4>Underweight </h4>
+                <p>&lt; 18.5</p>
+            </div>
+            <div id="b-2">
+                <h4>Normal</h4>
+                <p>18.5 - 25</p>
+
+            </div>
+
+            <div id="b-3">
+                <h4>Overweight</h4>
+                <p>25 - 30</p>
+            </div>
+            <div id="b-4">
+                <h4>Obese</h4>
+                <p>>= 30</p>
+            </div>
+        </section>
+    </div>
+<script src="app.js">
+   
+
+</script>
+  </body>
+</html>
